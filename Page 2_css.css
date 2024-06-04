@@ -1,0 +1,63 @@
+@import url(Footer_css.css);
+@import url(Header-Nav.css);
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+main {
+    padding: 20px;
+    display: grid;
+    grid-template-areas: "pp pp pp bio"
+                         "bp bp bp bp";
+  }
+  .profile-pic {
+    grid-area: pp;
+  }
+  .bio {
+    background-color: #b5d2e4;
+    grid-area: bio;
+    font-size: smaller;
+  }
+  .blog-post {
+    grid-area: bp;
+ 
+  }
+
+img {
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 200px;
+  width: 100px;
+  border-radius: 50%;
+}
+@media (max-width: 768px) {
+    .nav-links {
+      flex-direction: column;
+      align-items: center;
+    }
+    .nav-links li {
+      margin: 2px 0;
+    }
+    .posts {
+      grid-template-columns: 1fr;
+    }
+  }
+  @media (max-width: 480px) {
+    header {
+      text-align: left;
+      padding: 10px;
+    }
+    .nav-links {
+      justify-content: flex-start;
+      flex-direction: column;
+    }
+  }

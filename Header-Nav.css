@@ -1,0 +1,43 @@
+header {
+    background-color: #2c7eb1;
+    padding: 10px 0;
+    text-align: center;
+  }
+  a {
+    text-decoration: none;
+  }
+  span {
+    text-decoration-line: underline;
+  }
+  .site-title {
+    font-family: Sofia;
+  }
+  h1 a {
+    color: #193a44;
+  }
+  .byline {
+    font-style: italic;
+    color: #193a44;
+  }
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: end;
+  }
+  
+  .nav-links li {
+    margin: 0 15px;
+  }
+  
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .nav-links a:hover {
+    text-decoration: underline;
+  }
